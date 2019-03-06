@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.css">
+    <title>Community</title>
+</head>
+
+<body>
+
+    <section id="">
+        <div class="container">
+            <div class="title m-2">
+                <div class="info">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <div class="friends">Friends</div>
+                </div>
+                <div class="tablist">
+                    <div class="nav-bar">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link nav-active" href="#">All Friends<span
+                                        class="badge badge-light people-count d-inline-block"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Female<span class="badge badge-light people-count"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Male<span
+                                        class="badge badge-light people-count"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+                        <div class="search d-flex align-items-center ">
+                            <input type="text" id="searchInput" class="search-input"
+                                placeholder="Search for your friends">
+                            <button class="search-btn">
+                                <i class="search-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a href="favorite.html" class="favorite" id="target-container">
+                    <div class="folder">
+                        <span id="folder-icon" class="typcn typcn-folder"></span>
+
+                    </div>
+                    <p id="favorite-text" class="mb-0 ml-1">Favorite person here!</p>
+
+                </a>
+                <div class="feedback">
+                    <p id="feedback-text" class="mb-0 ml-1 d-none"></p>
+                </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-labelledby="nameModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body vh-75" id="bodyModalLabel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collection"></div>
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center" id="pagination">
+                </ul>
+            </nav>
+
+            <div class="loading d-block d-none justify-content-center align-items-center">
+                <div class="spinner-border text-info align-self-center" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
